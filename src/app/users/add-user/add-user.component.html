@@ -1,0 +1,24 @@
+
+<div>
+    <h2>Add User</h2>
+    <form>
+      <!-- Your user input fields go here -->
+      <label for="firstname">firstnamename:</label>
+      <input type="text" id="firstname" [(ngModel)]="userData.firstname" name="firstname" required>
+      <br>
+
+      <label for="lastname">lastname:</label>
+      <input type="lastname" id="lastname" [(ngModel)]="userData.lastname" name="lastname" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="userData.email" name="email" required>
+      <br>
+      <label for="phonenumber">phonenumber:</label>
+      <input type="phonenumber" id="phonenumber" [(ngModel)]="userData.phonenumber" name="phonenumber" required>
+      <br>
+      <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" (click)="addUser()">Add User</button>
+    
+      
+    </form>
+  </div>
+  

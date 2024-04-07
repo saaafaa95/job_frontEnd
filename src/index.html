@@ -2,12 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Job</title>
+  <title>ForsaJob</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/colors/blue.css">
+
+
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
 </head>
 <body>
   <app-root></app-root>
 </body>
+
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/mmenu.min.js"></script>
+<script src="assets/js/tippy.all.min.js"></script>
+<script src="assets/js/simplebar.min.js"></script>
+<script src="assets/js/bootstrap-slider.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/snackbar.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+<script src="assets/js/counterup.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+  // Snackbar for user status switcher
+  $('#snackbar-user-status label').click(function() { 
+    Snackbar.show({
+      text: 'Your status has been changed!',
+      pos: 'bottom-center',
+      showAction: false,
+      actionText: "Dismiss",
+      duration: 3000,
+      textColor: '#fff',
+      backgroundColor: '#383838'
+    }); 
+  }); 
+  </script>
+  
+  
 </html>
